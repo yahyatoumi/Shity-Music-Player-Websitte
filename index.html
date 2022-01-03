@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css" />
+    <title>Music Player</title>
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="bg">
+            <nav>
+                <div id="logo">Music Player</div>
+                <div id="menu">
+                    <ul>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#music">music</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <section class="section" id="home">
+                <div id="discription">
+                    This website is all about listening to music. <br>
+                    We have in the <a href="#music">music</a> Section Two albums: <br>
+                    <div class="album-discription">
+                        The first Album called 'Random Access Memories' By Daft Punk.
+                    </div>
+                    <img src="css/images/ram.jpg" alt="Random access Memories album cover">
+                    <div class="album-discription">
+                        And The second's made By The legend Tame Impala , called The Slow Rush.
+                    </div>
+                    <img src="css/images/slowrush.jpg" alt="the slow rush album cover">
+
+
+                </div>
+            </section>
+            <div id="enjoy">
+                Enjoy!
+            </div>
+            <div class="xxx">
+                <section class="section" id="music">
+                    <div id="albums">
+                        <a href="" id="lefticon"></a>
+                        <a href="" id="righticon"></a>
+                    </div>
+                    <div id="player">
+                        <audio id="audio" controls autoplay>
+                            <source id="audiosrc" src="music/Random Access Memories/1.mp3" type="audio/mpeg">
+                            Your browser does not support the audio element.
+                        </audio>
+                        <div id="buttons">
+                            <div id="prev">
+                                <a href="#" class="fas fa-backward"></a>
+                            </div>
+                            <div id="next">
+                                <a href="#" class="fas fa-forward"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="music-player">
+                        <div id="album-header">RAM. By Daft Punk</div>
+
+                        <div id="playlist">
+                        </div>
+
+                    </div>
+                </section>
+            </div>
+            <div class="xxx">
+                <section class="section" id="contact">
+                    <div id='contact-container'>
+                        <form id="form" name="form">
+                            <label>First name :
+                                <input type="text" id="fname">
+                            </label>
+                            <label>Last name :
+                                <input type="text" id="lname">
+                            </label>
+                            <br>
+                            <label>Email :
+                                <input type="Email" id="email">
+                            </label>
+                            <br>
+                            <label>
+                                Type a message :
+                                <textarea name="textarea" id="textarea"></textarea>
+                            </label>
+                            <br>
+                            <input type="submit" id="submit">
+                            <input type="reset" id="reset">
+                            <p id="thanks">Thanks for the message. <br>
+                                i won't be receiving it lil assaf hh</p>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
